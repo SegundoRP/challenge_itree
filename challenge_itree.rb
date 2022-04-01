@@ -1,9 +1,9 @@
 require 'date'
 require 'time_diff'
-# # gem install time_diff
+# gem install time_diff
 
-# # Algoritmos
-# # 1
+# Algoritmos
+# 1
 def salario(horasTrabajadas, salarioHora)
   if horasTrabajadas > 48
     horasExtra = horasTrabajadas - 48
@@ -13,12 +13,12 @@ def salario(horasTrabajadas, salarioHora)
   end
 end
 
-# # 2
+# 2
 def promedioNotas(listaNotas)
   listaNotas.inject(:+) / listaNotas.size
 end
 
-# #3
+# 3
 def infoPersonal
   signoZodiacal = { Aries: (Date.strptime('21-03', '%d-%m')..Date.strptime('20-04', '%d-%m')),
                     Tauro: (Date.strptime('21-04', '%d-%m')..Date.strptime('20-05', '%d-%m')),
@@ -85,5 +85,3 @@ def decisiones(edad, estadoCivil, cantidadHijos, contratacion, tiempo)
     puts "El cliente debe ser rechazado, tiene #{edad} años, es #{estadoCivil} y con #{cantidadHijos} hijos, por ello tiene #{porcentaje}% de probabilidad"
   end
 end
-
-# TweetSec
